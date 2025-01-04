@@ -15,6 +15,7 @@ Step 2: Create Subnets
 - VPC: Select test-VPC.
 - Availability Zone: Choose one (e.g., London).
 - CIDR block: 172.16.0.0/20.
+
 - Click Create.
 
 <h3> Private Subnet: </h3>
@@ -99,13 +100,14 @@ Step 6: Lauch the Instances
 
 <h4> Launch EC2 in Private Subnet: </h4>
 - Repeat the process above, but: 
+
 - Subnet: Select backend-subnet.
 - Auto-assign Public IP: Disable.
 
 Step 7: Test Connectivity
 
-- Public Subnet Instance:
+<h4> Public Subnet Instance: </h4>
 - Use the public IP to SSH or access the instance.
 
-- Private Subnet Instance:
+<h4> Private Subnet Instance: </h4>
 - Access the private instance via the public instance using SSH or a bastion host.
