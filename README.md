@@ -22,8 +22,8 @@ Step 2: Create Subnets
 - VPC: Select test-VPC.
 - Availability Zone: Choose one (e.g., London).
 - CIDR block: 172.16.32.0/20.
-- Click Create.
 
+- Click Create.
 
 Step 3: Set up Internet Gateway
 
@@ -86,7 +86,7 @@ Step 5: Configure Route Tables
 
 Step 6: Lauch the Instances
 
-- Launch EC2 in Public Subnet:
+<h4> Launch EC2 in Public Subnet: </h4>
 - Go to EC2 Dashboard > Launch Instance.
 - Choose an AMI (e.g., Amazon Linux 2).
 - Choose an instance type (e.g., t2.micro).
@@ -97,7 +97,8 @@ Step 6: Lauch the Instances
 - Auto-assign Public IP: Enable.
 - Launch the instance.
 
-- Launch EC2 in Private Subnet: > Repeat the process above, but:
+<h4> Launch EC2 in Private Subnet: </h4>
+- Repeat the process above, but: 
 - Subnet: Select backend-subnet.
 - Auto-assign Public IP: Disable.
 
