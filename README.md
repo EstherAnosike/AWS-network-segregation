@@ -10,19 +10,20 @@ Step 1: Create a new VPC
 
 Step 2: Create Subnets
 
-<h4> Public Subnet: </h4>
+<h3> Public Subnet: </h3>
 - Name tag: frontend-subnet.
 - VPC: Select test-VPC.
 - Availability Zone: Choose one (e.g., London).
 - CIDR block: 172.16.0.0/20.
 - Click Create.
 
-<h4> Private Subnet: </h4>
+<h3> Private Subnet: </h3>
 - Name tag: backend-subnet.
-- PC: Select test-VPC.
+- VPC: Select test-VPC.
 - Availability Zone: Choose one (e.g., London).
 - CIDR block: 172.16.32.0/20.
 - Click Create.
+
 
 Step 3: Set up Internet Gateway
 
@@ -51,7 +52,7 @@ Step 4: Create a NAT Gateway
 
 Step 5: Configure Route Tables
 
-<h4> Public Route Table: </h4>
+<h3> Public Route Table: </h3>
 - Go to Route Tables > Create Route Table.
 - Name tag: front-rt.
 - VPC: Select test-VPC.
@@ -67,7 +68,7 @@ Step 5: Configure Route Tables
 - Select frontend-subnet.
 - Click 'Save'.
 
-<h4> Private Route Table: </h4>
+<h3> Private Route Table: </h3>
 - Go to Route Tables > Create Route Table.
 - Name tag: back-rt.
 - VPC: Select test-VPC.
